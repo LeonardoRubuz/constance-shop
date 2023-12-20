@@ -3,8 +3,8 @@ import { Inter } from 'next/font/google'
 import '../globals.css'
 import Header from '../components/global/header'
 import Footer from '../components/global/footer'
+import {roboto} from '@/app/lib/fonts'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Constance RDC',
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="flex flex-col">
+      <body className={`${roboto.className} flex flex-col`}>
         <Header />
         <main>
           {children}
