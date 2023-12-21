@@ -1,4 +1,4 @@
-import { Roboto, Poppins } from "next/font/google";
+import { Roboto, Poppins, Prata, Bodoni_Moda } from "next/font/google";
 
 export const roboto = Roboto({
     subsets : ['latin'],
@@ -8,4 +8,13 @@ export const roboto = Roboto({
 export const poppins = Poppins({
     subsets : ['latin'],
     weight : ['400','700']
+})
+export const bodoni = Bodoni_Moda({
+    subsets : ['latin'],
+    weight : ['400','700']
+})
+
+export const prata = Prata({
+    subsets : ['latin'],
+    weight : ['400','400']
 })

@@ -11,7 +11,7 @@ function CallToAction({
 }
 ) {
     return ( 
-        <button>
+        <button className="bg-blanc text-left w-fit p-4 call-to-action">
             {
                 hasIcon ?
                 <Image
