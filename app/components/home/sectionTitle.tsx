@@ -6,9 +6,9 @@ function SectionTitle({
     description : string
 }) {
     return ( 
-        <div>
-            <h2>{title}</h2>
-            <p>{description}</p>
+        <div className="flex flex-col items-center gap-3">
+            <h2 className="text-2xl font-semibold">{title}</h2>
+            <p className="text-[1rem]">{description}</p>
         </div>
      );
 }

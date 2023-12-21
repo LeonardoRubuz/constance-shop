@@ -1,4 +1,5 @@
 import Image from "next/image";
+import blackBackground from "@/public/black.jpg"
 
 
 function ProductCard({
@@ -11,13 +12,15 @@ function ProductCard({
         itemName : string,
         itemPrice : number
     }) {
-    return ( 
-        <div>
-            <div>
-                <Image src={itemImage} alt="" />
+    return (
+        <div className="rounded-lg shadow-xl">
+            <div className="rounded-lg h-[60%]">
+                <Image src={blackBackground} alt="" className="w-full object-cover h-[100%]"/>
             </div>
-            <span>{itemName}</span>
-            <span>{itemPrice} $</span>
+            <div className="flex justify-between h-[40%]">
+                <b>{itemName}</b>
+                <p>${itemPrice}</p>
+            </div>
         </div>
      );
 }
